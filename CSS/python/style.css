@@ -1,0 +1,155 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    background:#0066CC;
+    width:970px;
+    height:900px;
+    padding:10px
+}
+#textsizing{
+    position:relative;
+    left:790px;
+}
+
+#header{
+    width:970px;
+    height:100px;
+   
+}
+#navblock{
+text-align: center;
+width:970px;
+height:50px;
+}
+.navigation{
+    display:inline-block;
+    margin: 0px auto;
+    width:900px;
+    height:50px;
+    color:white;
+}
+.searchbox{
+    background:black;
+    width:250px;
+    height:25px;
+    padding:10px 5px 10px 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.logo{
+    display:inline-block;
+}
+.searchbox{
+    position:relative;
+    display:inline-block;
+    vertical-align: top;
+    left:350px;
+
+}
+.searchsub1{
+    display:inline-block;
+}
+.searchsub2{
+    display:inline-block;
+}
+
+.btn{
+    display: inline-block;
+    background:royalblue;
+    width:100px;
+    height:50px;
+    border-radius: 10px;
+    text-align: center;
+    padding:10px 10px 0px 10px; 
+    line-height: 40px;  
+     color:white;
+}
+.btn>a{
+    text-decoration: none;
+}
+.logoimage{
+    width:350px;
+    height:auto;
+}
+#centerContent{
+    text-align: center;
+    margin-top:10px;
+    width:970px;
+    height:350px;
+    padding-bottom: 20px;
+    color:white;
+}
+.centerLeft{
+    vertical-align: top;
+    display:inline-block;
+    width:200px;
+    height:300px;
+    color:white;
+}
+.centerRight{
+    vertical-align: top;
+    color: white;
+    text-align: center;
+    display:inline-block;
+    width:550px;
+    height:300px;
+}
+#centerLowerContent{
+    
+    display: inline-block;
+      background: white;
+      width:970px;
+}
+.centerLowerLeft{
+    color:black;
+    vertical-align:top;
+    text-align: center;
+    display:inline-block;
+    width:450px;
+    padding:10px;
+}
+.centerLowerRight{
+    color:black;
+     text-align:center;
+    display:inline-block;
+    width:450px;
+    padding:10px;
+}
+#footer{
+    display: inline-block;
+      text-align: center;
+      width:970px;
+      color: white;
+}
+
+.dot{
+    display:inline-block;
+           list-style-type: none;
+           padding:0px 20px 0px 20px;
+
+}
+ .textFormat1{
+    color:yellow;
+    font-style: oblique
+            
+ }
+a.class1:link,
+a.class1:visited,
+a.class1:hover{
+        color:white;
+ }
+a.class2:link,
+a.class2:visited,
+a.class2:hover{
+        color:blue;
+ }
+.copyright{
+     font-size: xx-small;
+    }
+.blueline{
+    border: solid thin blue;
+}
+.bullet{
+   list-style-type: square;
+}

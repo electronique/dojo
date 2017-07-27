@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <meta charset="UTF-8">
+<style>
+html{
+  background-color: #FFF;
+}
+.topHalf{
+background-color: lightblue;
+padding:10px;
+}
+.bottomHalf{
+  background-color:#E7FFD4;
+  padding:10px;
+}
+table{
+  border: 1px solid #ccc;
+ }
+thead{
+  background-color: #cec;
+
+}
+.cellbackground{
+  background-color: white;
+}
+.bioImage{
+  width:30%;
+  float: left;
+  height:auto;
+  padding-right:2px;
+}
+.rightCol{
+  width:30%;
+  height:auto;
+}
+.specials{
+  clear:left;
+}
+</style>
+</head>
+<body>
+
+<div><h1>Joe Reinsel</h1></div>
+  <div class="topHalf">
+ <div class="bioImage"><img src="img/bio.jpg" alt="image of Joe Reinsel"></div>
+<div class="rightcol"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis mi sit amet mattis aliquam. Vestibulum commodo felis lacus, nec dignissim justo sodales sit amet. Morbi vulputate scelerisque sagittis. Curabitur vehicula et tortor nec ultrices. In luctus tellus turpis, non molestie velit ullamcorper ut. Praesent elementum nunc eros, vel sagittis leo finibus vitae. Morbi rhoncus sapien at interdum vestibulum. Aliquam facilisis varius felis, viverra hendrerit nibh tempor id. Phasellus placerat ut orci non hendrerit.</div>
+<br/>
+  <table>
+    <thead>
+      <tr>
+        <td><strong>Schools</strong></td>
+        <td><strong>Degrees</strong></td>
+        <td><strong>Years</strong></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="cellbackground">
+        <td>Rensselaer Polytechnic Institute</td>
+        <td>M.F.A.</td>
+        <td>2002</td>
+      </tr>
+      <tr class="cellbackground">
+        <td>Radford University</td>
+        <td>M.A.</td>
+        <td>1998</td>
+      </tr>
+      <tr class="cellbackground">
+        <td>Radford University</td>
+        <td>B.M.</td>
+        <td>1994</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<br/>
+  <div class="specials"><ul>
+    <li>Artist</li>
+    <li>Educator</li>
+    <li>Technology Specialist</li>
+  </ul></div>
+  <a href="http://www.joereinsel.org">Link to my Artist Portfolio</a></div>
+<div class="bottomHalf">  <h3> Please take this short survey</h3>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
+    <br/>
+    <table>
+      <tr>
+        <td><input type="radio" name="info" value="yes">Yes, please send me losts of emails.</td>
+        <td><input type="radio" name="info" value="no">No, please do not send me any emails.</td>
+
+      </tr>
+    </table>
+    <table>
+    <tr><td><p>How did you hear about me?</p></td></tr>
+  <tr><td><input type="checkbox" id="checkbox1" value="facebook">Facebook</td></tr>
+    <tr><td><input type="checkbox" id="checkbox2" value="instagram">Instagram</td></tr>
+    <tr><td><input type="checkbox" id="checkbox3" value="referral">Referral</td></tr>
+    <tr><td><input type="checkbox" id="checkbox4" value="other">Other</td></tr>
+    </table>
+    <button name="submit">Submit</button>
+  </div></div>
+  </body>
+</html>
