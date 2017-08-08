@@ -1,0 +1,201 @@
+
+#wrapper{
+padding:10px;
+margin: 0px auto;
+
+}
+html{
+  font-family:sans-serif;
+
+}
+#header{
+  position: relative;
+width:1000px;
+height:70px;
+margin-bottom: 10px;
+}
+.titleclass{
+  position:relative;
+  color: black;
+  left:120px;
+  margin-bottom: 5px;
+}
+.headblock{
+  position: relative;
+  width:1000px;
+  height:35px;
+}
+.www{
+  margin-left:120px;
+  font-size: large;
+
+}
+.globe{
+  height:100px;
+  width: auto;
+  position:relative;
+  bottom:120px;
+
+}
+.blockbackground{
+  position:relative;
+  background:darkblue;
+  color:white;
+  padding-top:10px;
+
+}
+.blockbackground .title{
+  position:relative;
+  left:30px;
+}
+#sidebar{
+  vertical-align: top;
+  display: inline-block;
+  background: #ccc;
+  width: 300px;
+  height:700px;
+}
+.adNinja{
+  text-align: center;
+  background-image:url("images/ad_background.png");
+  color:white;
+  margin: 0px auto;
+  display: block;
+  height:460px;
+}
+.ninja{
+  width:auto;
+  height:250px;
+  margin: 0px auto:
+}
+.adButton{
+  position: relative;
+  top:50px;
+  padding:10px;
+  background-color:darkblue;
+  color: white;
+  border-radius: 10px;
+}
+#mainContent{
+  display: inline-block;
+  padding-top: 20px;
+  width:700px;
+  height:700px;
+  background: white;
+
+}
+.mainContentBlock{
+  width:700px;
+  position: relative;
+  display: inline-block;
+  /*border: solid hotpink;for layout only*/
+}
+ .htmlImg {
+  vertical-align: top;
+  width:100px;
+  height:auto;
+  margin: 10px 0px 10px 20px;
+}
+
+.mainHeader{
+  display: inline-block;
+}
+.phoneBlock{
+  margin-left: 400px;
+  display: inline-block;
+}
+#footer{
+  display: block;
+  width:960px;
+  height:100px;
+
+}
+h2{
+  position: relative;
+  top:15px;
+}
+.sidebarcentering{
+  margin: 0px 15px 0px 15px;
+  padding-bottom: 5px;
+}
+.sidebarcentering2{
+  margin: 20px 20px 10px 45px;
+  padding-bottom: 5px;
+}
+.textRed{
+  color:#FF0000;
+}
+.button{
+  position: relative;
+  text-align: center;
+  width:200px;
+  height:50px;
+  margin-left: 50px;
+  color: white;
+  font-size: large;
+
+
+}
+.bluebutton{
+    background: blue;
+}
+.orangebutton{
+    background:orange;
+}
+.homeimage{
+  position: relative;
+  left: 5px;
+  display: inline;
+  width: 20px;
+  height: auto;
+  vertical-align: top;
+}
+.phoneimage{
+  display: inline;
+  width: 40px;
+  height: auto;
+  padding-right: 5px;
+}
+.phonenumText{
+  font-size: small;
+}
+.phoneNumStyle{
+  color:blue;
+}
+.dns{
+
+  vertical-align: top;
+}
+.dnstextPush{
+  position: relative;
+  left: 5px;
+  top:2px;
+}
+.csImage{
+  width: 250px;
+  height: auto;
+  margin:auto;
+  display: block;
+}
+
+
+.imgAdjust{
+  margin:auto;
+}
+.bottomLeft{
+  vertical-align: top;
+  display: inline-block;
+
+}
+.bottomRight{
+  position: relative;
+  bottom: 25px;
+  left:5px;
+  vertical-align: top;
+  display:inline-block;
+  width:550px;
+
+}
+.bottomDiv{
+  border: solid medium blue;
+}

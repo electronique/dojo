@@ -1,0 +1,10 @@
+var sum = 0;
+
+function threeFives(){
+  for(var i = 100; i<4000000;i++){
+ sum = sum + i;
+
+  }
+  console.log(sum);
+}
+threeFives();
