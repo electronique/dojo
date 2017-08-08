@@ -1,0 +1,12 @@
+cd Desktop
+cd Documents
+cd dojo
+cd javascript
+mkdir basic_repo
+cd basic_repo
+touch index.html styles.css readme.md
+git init
+git add .
+git commit -m "inital commit"
+git status
+git push
