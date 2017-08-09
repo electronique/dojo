@@ -3,10 +3,10 @@ var newArray = [];
 function numberFilter(){
   for(var i=0; i<numbersOnly.length; i++){
  if(typeof numbersOnly[i] == "number"){
-   newArray.push(numbersOnly[i]);
+   delete numbersOnly[i];
  }
 
  }
-console.log(newArray);
+console.log(numbersOnly);
 }
 numberFilter();
