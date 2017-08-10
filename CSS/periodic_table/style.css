@@ -24,22 +24,27 @@
 #block1{
   display:inline-block;
   width:200px;
-  height:400px;
+  height:440px;
 
 }
 #block2{
+  position: relative;
+  right:25px;
   display: inline-block;
   width:560px;
-  height:200px;
-
+  height:340px;
 }
 #block3{
+  position: relative;
+  left:5px;
   display: inline-block;
   width:360px;
   height:400px;
 
 }
 #block4{
+  margin-top: 20px;
+  margin-left: 60px;
   display:inline-block;
   width:900px;
   height:120px;
@@ -50,16 +55,17 @@
   vertical-align: top;
   width:50px;
   height:50px;
+  text-align: left;
 
 }
 .elementName{
   font-weight: bold;
 }
 .firstEMpush{
-  margin-right:50px;
+  margin-right:55px;
 }
 .firstEMpush3{
-  margin-left: 280px;
+  margin-left: 300px;
 }
 .ecolor{
   background-color: pink;
@@ -69,4 +75,17 @@
 }
 .ecolor3{
   background-color:green;
+}
+.b4names{
+  vertical-align: top;
+  text-align: right;
+  border: solid hotpink;
+}
+.numbers3{
+  vertical-align: top;
+  text-align: center;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border: solid hotpink;
 }
