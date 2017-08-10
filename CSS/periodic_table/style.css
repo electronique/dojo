@@ -1,0 +1,28 @@
+
+#wrapper{
+  width:1000px;
+  height:800px;
+}
+.numbers{
+  vertical-align: top;
+  text-align: center;
+  display:inline-block;
+  width:100px;
+  height:100px;
+}
+.element{
+  vertical-align:top;
+  width:80px;
+  height:80px;
+  text-align: center;
+  background:cornflowerblue;
+  border: solid thin darkblue;
+}
+#block1{
+  width:150px;
+  height:350px;
+}
+.numbers2{
+  width:100px;
+  height:100px;
+}
