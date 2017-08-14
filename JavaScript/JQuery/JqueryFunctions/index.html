@@ -1,0 +1,118 @@
+<!-- JQuery objects to use in project
+//.click
+//.hide
+//.show
+//.slideDown
+//.slideUp
+//.slideToggle
+//.addClass
+//.append
+//.html
+//.text
+//.data
+-->
+
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Jquery basic assignment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('#slideclose').hide();
+        $(".moreinfo").data('.info',{first:"Here is the first set of information"});
+
+
+        $('#addclass').click(function(){
+            $('.para1').addClass('textcolor');
+        });
+        $('#slide').click(function(){
+            $('.treeimage').slideToggle(1000);
+        });
+
+        $('#aPara').click(function(){
+            $('.appendpara').append(" this is the next sentence in the paragraph");
+
+        });
+        $('#slideopen').click(function(){
+            $('.slide').slideDown(500);
+            $('#slideopen').hide();
+            $('#slideclose').show();
+
+        });
+       $('#slideclose').click(function(){
+            $('.slide').slideUp(500);
+            $('#slideopen').show();
+            $('#slideclose').hide();
+            $('.info').hide();
+        });
+        $('#infobutton').click(function(){
+         $('.moreinfo').text($('.moreinfo').data('.info').first);
+
+        });
+        $('.newContent').click(function(){
+            $( ".newContent" ).html(function() {
+                    return "<p>All new content</p>";
+});
+        })
+
+    });
+
+
+</script>
+
+    </head>
+    <body>
+        <div id="wrapper">
+        <div id="content">
+            <div class="left">
+                <button id="addclass">AddClass</button>
+            </div>
+            <div class="right">
+                 <h1>AddClass</h1>
+                  <p class="para1">Click the button to add class 'red' to this paragraph</p>
+                  <hr>
+            </div>
+        <div id="content">
+                <div class="left"><button id="slide">SlideToggle</button>
+                    
+                </div>
+                <div class="right">
+            <h1>SlideToggle</h1>
+            <p>Click the button to slidetoggle a hidden image</p>
+         <div class="treeimage"><img src="images/tree.png" alt="trees">
+        <button id="infobutton">More information</button>
+        <p class="moreinfo"></p>
+        </div>
+         <hr>
+        </div>
+         <div id="content">
+                    <div class="left"><button id="aPara">Append</button></div>
+                    <div class="right">
+                <h1>Append</h1>
+            <p class="appendpara">Click the button to append a new paragraph</p>
+            </div>
+            
+            </div>
+            <div id="content">
+                    <div class="left"><button id="slideopen">Slide</button>
+                        <button id="slideclose"> Close Slide</button>
+                    </div>
+                    <div class="right">
+                <h1>Slides!</h1>
+                <p class="slide">This is the slides area!!</p>
+            </div>
+            
+            </div>
+<div id="content">
+    <div class="newContent">this is the content</div>
+    </body>
+</html>

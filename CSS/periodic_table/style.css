@@ -1,4 +1,7 @@
-
+*{
+  margin:0px;
+  padding:0px;
+}
 #wrapper{
   width:1150px;
   height:800px;
