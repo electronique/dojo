@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+       
+        for(var i = 0; i < 9;i++){
+            var  newdiv = $newdiv1= $("<div class=ninja"+[i]+"><img class=ninjaimage src='images/ninja.jpg'></div>");
+            
+        $("body").append(newdiv);
+        $(".ninja"+[i]).css('display','inline-block');
+
+        };
+        $(".ninja"+[i]).click(function(){
+            $(this).hide();
+        });
+        $(".ninja1").click(function(){
+            $(this).hide();
+        });
+        $(".ninja2").click(function(){
+            $(this).hide();
+        });   
+        $(".ninja3").click(function(){
+            $(this).hide();
+        });
+        $(".ninja4").click(function(){
+            $(this).hide();
+        });
+        $(".ninja5").click(function(){
+            $(this).hide();
+        }); 
+        $(".ninja6").click(function(){
+            $(this).hide();
+        }); 
+        $(".ninja7").click(function(){
+            $(this).hide();
+        }); 
+        $(".ninja8").click(function(){
+            $(this).hide();
+        }); 
+        $("#restore").click(function(){
+            for(var i =0;i<9;i++){
+            $(".ninja"+[i]).show();
+            }
+        });
+
+    });
+    </script>
+
+</head>
+<body>
+    <button id="restore">Restore</button>
+</body>
+</html>

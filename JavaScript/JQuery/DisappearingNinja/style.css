@@ -1,0 +1,17 @@
+#wrapper{
+    width:900px; 
+    height:900px;
+}
+
+body{
+
+    outline: hotpink dotted;
+    background:gray;
+    width:900px;
+    height:900px;
+}
+.ninjaimage{
+    display: inline-block;
+    width:300px;
+    height:auto;
+}
