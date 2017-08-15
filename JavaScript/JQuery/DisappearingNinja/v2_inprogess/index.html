@@ -12,22 +12,31 @@
     
     $(document).ready(function(){
        
+        for(var i = 0; i < 9;i++){
+            var  newdiv = $newdiv1= $("<div class=ninja"+[i]+"><img class=ninjaimage src='images/ninja.jpg'></div>");
+            
+        $("body").append(newdiv);
+        $(".ninja"+[i]).css('display','inline-block');
 
+        };
+        $(".ninja"+[i]).click(function(){
+            $(this).hide();
+        });
         $(".ninja1").click(function(){
             $(this).hide();
         });
         $(".ninja2").click(function(){
             $(this).hide();
-        });
+        });   
         $(".ninja3").click(function(){
             $(this).hide();
-        });   
+        });
         $(".ninja4").click(function(){
             $(this).hide();
         });
         $(".ninja5").click(function(){
             $(this).hide();
-        });
+        }); 
         $(".ninja6").click(function(){
             $(this).hide();
         }); 
@@ -35,9 +44,6 @@
             $(this).hide();
         }); 
         $(".ninja8").click(function(){
-            $(this).hide();
-        }); 
-        $(".ninja0").click(function(){
             $(this).hide();
         }); 
         $("#restore").click(function(){
@@ -51,24 +57,6 @@
 
 </head>
 <body>
-    <div class="title"><h1 class="titletext">The Disappearing Ninja</h1>
     <button class="buttoncolor" id="restore">Restore</button>
-    </div>
-    <table><tr>
-    <td><div class="ninja0 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    <td><div class="ninja1 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    <td><div class="ninja2 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    </tr>
-    <tr>
-    <td><div class="ninja3 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    <td><div class="ninja4 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    <td><div class="ninja5 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    </tr>
-    <tr>
-    <td><div class="ninja6 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    <td><div class="ninja7 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    <td><div class="ninja8 ninjablock"><img src="images/ninja.jpg" alt="NINJA!"></div></td>
-    </tr>
-</table>
 </body>
 </html>

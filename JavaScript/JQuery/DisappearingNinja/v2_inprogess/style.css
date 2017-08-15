@@ -27,16 +27,6 @@ td{
     height:200px;
 }
 .buttoncolor{
-    display: inline-block;
     background-color:red;
     color:white;
-    padding:20px;
-    border-radius: 10px;
-    font-weight: 10px;
-    position: relative;
-    left:790px;
-}
-.titletext{
-    display: inline-block;
-    color: red;
 }
