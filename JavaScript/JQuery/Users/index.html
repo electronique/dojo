@@ -5,17 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('form').submit(function(){
+              $('#tableresult').append('<tr><td>'+$('#first_name').val()+'</td><td>'+$('#last_name').val()+'</td><td>'+$('#email').val()+'</td><td>'+$('#phone').val()+'</td>');
+                    return false
+            });
+
+        });
+        </script>
+    <title>Users</title>
 </head>
+
+
 <body>
-   <table border="5"><thead>
+   <table><thead>
        <tr>
-            <td>First Name</td>
+            <td class>First Name</td>
             <td>Last Name</td>
             <td>Email Address</td>
             <td>Contact #</td>
 
        </tr></thead>
+       <tbody id="tableresult"></tbody>
 </table> 
+<div id="formcontainer"><h1>Add User</h1>
+</div>
+
+<form action = "process.php" method="post">
+  <table id="form">
+    <tr>
+      <td><label for="first_name">First Name:</label></td>
+      <td><input type="text" id="first_name" name="first_name"></td>
+    </tr>
+    <tr>
+      <td><label for="last_name">Last Name:</label></td>
+      <td><input type="text" id="last_name" name="last_name"></td>
+    </tr>
+    <tr>
+      <td><label for="email">Email:</label></td>
+      <td><input type="text" id="email" name="email"></td>
+    </tr>
+    <tr>
+      <td><label for="phone">Phone Number:</label></td>
+      <td><input type="text" id="phone" name="phone"></td>
+    </tr>
+  </table>
+  <input type ="submit" value="submit">
+  
+</form>
+    <br/>
+    <br/>
 </body>
 </html>

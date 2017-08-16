@@ -1,8 +1,15 @@
 thead{
-    
+    border: color black solid;
 }
 table{
     border: solid black;
     width:600px;
     text-align: center;
+}
+#form{
+    width:600px;
+    height:100px;
+}
+hr{
+    border: 2px solid #000;
 }
