@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    
+    <script>
+        $(document).ready(function(){
+                $("div").hover(
+                            function() {
+                                $(this).html($("<img src='images/blueLeft.jpg'>"));
+                            }
+                            ,
+                    
+                            function(){
+                    $(this).html($("<img src='images/redRight.jpg'>"));
+                            }
+                );
+            });
+        </script>
+
+</head>
+<body>
+    <div id="images"><img src='images/redRight.jpg' data-alt-src='images/blueLeft.jpg'/></div>
+    <div id="images"><img src='images/redRight.jpg' data-alt-src='images/blueLeft.jpg'/></div>
+    <div id="images"><img src='images/redRight.jpg' data-alt-src='images/blueLeft.jpg'/></div>
+    <div id="images"><img src='images/redRight.jpg' data-alt-src='images/blueLeft.jpg'/></div>
+  
+</body>
+</html>
