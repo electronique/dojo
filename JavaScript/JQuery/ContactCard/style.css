@@ -1,0 +1,43 @@
+thead{
+    border: color black solid;
+}
+table{
+    border: solid black;
+    width:600px;
+    text-align: center;
+}
+#form{
+    width:300px;
+    height:100px;
+}
+#formresult{
+    background-color:gray;
+    color:white;
+}
+hr{
+    border: 2px solid #000;
+}
+#entryContainer{
+    vertical-align: top;
+    display: inline-block;
+    width:400px;
+    height:400px;
+}
+#contactList{
+    display: inline-block;
+    width:400px;
+    height:400px;
+    padding:10px;
+    border-radius:10px;
+
+    
+}
+.descriptionval{
+    display:none;
+    background-color:gray;
+    color:white;
+    border-radius: 10px;
+}
+.closebutton{
+    display: none;
+}
