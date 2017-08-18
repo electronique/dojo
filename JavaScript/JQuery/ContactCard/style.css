@@ -1,5 +1,13 @@
-thead{
-    border: color black solid;
+html{
+    background-color:black;
+}
+h1{
+    color:white;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
 }
 table{
     border: solid black;
@@ -9,10 +17,16 @@ table{
 #form{
     width:300px;
     height:100px;
+    background-color:lightcoral;
+    padding:20px;
 }
 #formresult{
-    background-color:gray;
+    position: relative;
+    top:30px;
+    padding:20px;
+    text-align: center;
     color:white;
+   
 }
 hr{
     border: 2px solid #000;
@@ -22,6 +36,7 @@ hr{
     display: inline-block;
     width:400px;
     height:400px;
+    background-color:black;
 }
 #contactList{
     display: inline-block;
@@ -29,15 +44,18 @@ hr{
     height:400px;
     padding:10px;
     border-radius:10px;
-
-    
-}
+}  
 .descriptionval{
+    text-align: center;
     display:none;
-    background-color:gray;
-    color:white;
+    color:black;
     border-radius: 10px;
+    background-color:white;
 }
-.closebutton{
-    display: none;
+.contactblock{
+    margin:20px;
+    padding:20px;
+    border: solid black;
+    background-color: gray;
+  
 }

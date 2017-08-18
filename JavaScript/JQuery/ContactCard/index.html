@@ -10,13 +10,13 @@
         $(document).ready(function(){
 
             $('form').submit(function(){
-              $('#formresult').append('<div>'
-                                          +$('#first_name').val()+'</div>'+$('#last_name').val()+'</div><div class="descriptionval">'+$('#description').val()+'</div><button class="descripView">Click for Description</button><button class="closebutton">closebutton</button>');
+              $('#formresult').append('<div class="contactblock"><div>'
+                                          +$('#first_name').val()+' '+$('#last_name').val()+'</div><p><div class="descriptionval">'+$('#description').val()+'</div></p><button class="descripView">Click for Description</button></div>');
               /*At this point it only allows you to click on each one in order*/
                     return false
             });
-           $(document).on('click','#formresult',function(){
-             $(this).children().show('#descriptionval');
+           $(document).on('click','.descripView',function(){
+             $(this).siblings().show('#descriptionval');
           
                 
             });
@@ -30,8 +30,8 @@
 
 <body>
 <div id="entryContainer">
- <div id="formcontainer"><h1>Add User</h1>
-</div>
+ <h1>Add User</h1>
+
 
 <form action = "process.php" method="post">
   <table id="form">
