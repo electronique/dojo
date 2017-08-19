@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
+    <script>
+     
+        $(document).ready(function() {
+            $('form').submit(function() {
+                // your code here (build up your url)
+                $.get("http://api.openweathermap.org/data/2.5/weather?q="+($("#searchbox").val())+"&&appid=da1e87bfc899cb25434410dbcce9060c", function(res) {
+                    console.dir(res);
+                    console.log(res.weather[0].icon);
+                    console.log("http://openweathermap.org/img/w/"+res.weather[0].icon+".png>");
+                    var html_str = "";
+                    //var img_str = "";
+                    //var weatherimg = res.weather[0].icon;
+                    var searched_temp = Math.floor(Math.trunc((res.main.temp)*9/5-459.67));
+                    html_str += "<h2>"+res.name+"</h2>";
+                    html_str += "<h2>"+searched_temp+"</h2>";
+                    //html_str += "<h3>"+res.sys.country+"</h3>";
+                   // img_str = "<img src='http://openweathermap.org/img/w/"+weatherimg+".png>";
+                    $("#searchresult").html(html_str);
+                    //console.log($("#icon").append(img_str));
+                }
+                
+                , 'json');
+                // don't forget to return false so the page doesn't refresh
+                $(".degrees").show();
+                return false;
+            });
+        });
+        
+    
+    </script>
+
+    <title>Document</title>
+    
+    <script></script>
+
+</head>
+<body>
+
+    <h1>Your Weather</h1>
+   
+    <form>
+        <input type="text" id="searchbox" name="searchbox">
+        <button>search</button>
+    </form>
+   <div id="main">
+    <div id="searchresult"></div>
+    <h2 class="degrees"> degrees- Farneheit</h2>
+    <div id="icon" ></div>
+</div>
+</body>
+</html>

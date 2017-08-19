@@ -1,0 +1,35 @@
+*{
+    font-family:sans-serif;
+
+}
+html{
+    background-color:black;
+}
+
+#pokemon{
+    vertical-align: top;
+    display: inline-block;
+    width:75%;
+    height:900px;
+    background-color: black;
+}
+#pokedexMain{
+    vertical-align: top;
+    display: inline-block;
+    width:20%;
+    height:900px;
+    color:white;
+    background-color:black;
+}
+.thumbnails{
+    width:50px;
+    height:auto;
+}
+h1{
+    color:white;
+}
+#pokedex, #pName{
+    position: relative;
+    top:15px;
+    margin-left:30px;
+}
