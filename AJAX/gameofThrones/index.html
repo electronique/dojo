@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+
+       $(".houseimage1").click(function(){
+        $.get("https://www.anapioficeandfire.com/api/houses/362", function(gameOT) {
+            console.dir(gameOT);
+            //house 378 Targaryen
+            //house 15 Baratheon
+            //house 362 Stark
+            //house 229 Lannister
+        var html_str = "";
+        var titles_str = "";
+        var words_str = "";
+            html_str += "<h1>"+ gameOT.name +"</h1>";
+             for(var i =0;i<gameOT.titles.length;i++){
+                     titles_str += "<h2>"+gameOT.titles[i]+"</h2>";
+                    }
+            words_str += "<p>"+gameOT.words+"</p>";
+            
+            $("#houseDescription").html(html_str);
+            $("#houseDescription").append(titles_str);
+            $("#houseDescription").append(words_str);
+        },
+        'json');
+       });
+
+       $(".houseimage2").click(function(){
+        $.get("https://www.anapioficeandfire.com/api/houses/378", function(gameOT) {
+            console.dir(gameOT);
+            //house 378 Targaryen
+            //house 15 Baratheon
+            //house 362 Stark
+            //house 229 Lannister
+        var html_str = "";
+        var titles_str = "";
+        var words_str = "";
+            html_str += "<h1>"+ gameOT.name +"</h1>";
+             for(var i =0;i<gameOT.titles.length;i++){
+                     titles_str += "<h2>"+gameOT.titles[i]+"</h2>";
+                    }
+            words_str += "<p>"+gameOT.words+"</p>";
+            
+            $("#houseDescription").html(html_str);
+            $("#houseDescription").append(titles_str);
+            $("#houseDescription").append(words_str);
+        },
+        'json');
+       });
+       $(".houseimage3").click(function(){
+        $.get("https://www.anapioficeandfire.com/api/houses/229", function(gameOT) {
+            console.dir(gameOT);
+            //house 378 Targaryen
+            //house 15 Baratheon
+            //house 362 Stark
+            //house 229 Lannister
+        var html_str = "";
+        var titles_str = "";
+        var words_str = "";
+            html_str += "<h1>"+ gameOT.name +"</h1>";
+             for(var i =0;i<gameOT.titles.length;i++){
+                     titles_str += "<h2>"+gameOT.titles[i]+"</h2>";
+                    }
+            words_str += "<p>"+gameOT.words+"</p>";
+            
+            $("#houseDescription").html(html_str);
+            $("#houseDescription").append(titles_str);
+            $("#houseDescription").append(words_str);
+        },
+        'json');
+       });
+       $(".houseimage4").click(function(){
+        $.get("https://www.anapioficeandfire.com/api/houses/15", function(gameOT) {
+            console.dir(gameOT);
+            //house 378 Targaryen
+            //house 15 Baratheon
+            //house 362 Stark
+            //house 229 Lannister
+        var html_str = "";
+        var titles_str = "";
+        var words_str = "";
+            html_str += "<h1>"+ gameOT.name +"</h1>";
+             for(var i =0;i<gameOT.titles.length;i++){
+                     titles_str += "<h2>"+gameOT.titles[i]+"</h2>";
+                    }
+            words_str += "<p>"+gameOT.words+"</p>";
+            
+            $("#houseDescription").html(html_str);
+            $("#houseDescription").append(titles_str);
+            $("#houseDescription").append(words_str);
+        },
+        'json');
+       });
+    });
+    
+  //  };
+   // });
+
+    
+    
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="houses">
+            <img src="images/stark.jpg" class="houseimage1">
+            <img src="images/targaryen.jpg" class="houseimage2">
+            <img src="images/lannister.jpg" class="houseimage3">
+            <img src="images/baratheon.png" class="houseimage4">
+            <div id="houseimage2"></div>
+            <div id="houseimage3"></div>
+            <div id="houseimage4"></div>
+            <h2>House Description</h2>
+            <div id="houseDescription"></div>
+        </div>
+      
+    </div>
+    
+</body>
+</html>
