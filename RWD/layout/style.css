@@ -1,0 +1,36 @@
+#header{
+    width:100%;
+    background-color: #ccc;
+    height:100px;
+    padding-left:5%;
+}
+#nav{
+    width:100%;
+    height: 50px;
+}
+li{
+    background-color:#ccc;
+    display:inline-block;
+    padding:2px;
+    text-decoration: none;
+}
+.contentblock{
+    display:inline-block;
+    width:20%;
+    margin-left:1%;
+}
+@media all and (max-width: 750px) {
+    /* styles here */
+   .navchange{
+       display:none;
+   }
+   .columnchange{
+       width:30%;
+   }
+   .lastcolumn{
+       width:100%;
+   }
+
+    
+   }
+   
