@@ -1,0 +1,13 @@
+
+img{
+    width: 200px;
+    height:auto;
+}
+
+#sortable{
+    list-style-type: none;
+    width:200px;
+    height:auto;
+    margin-bottom:5px;
+
+}
