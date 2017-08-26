@@ -1,0 +1,27 @@
+h1{
+    margin-top: 20px;
+}
+
+
+form{
+    position: relative;
+    top:0px;
+    left:20px;
+    width:300px;
+    height: 500px;
+    background:lightblue;
+}
+#container{
+    position:relative;
+   
+}
+.formentry{
+    margin-top:10px;
+}
+
+button{
+    margin-top:20px;
+}
+#dialog{
+    display:none;
+}
